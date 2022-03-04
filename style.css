@@ -1,1 +1,47 @@
+html {
+  scroll-behavior: smooth;
+ }
+ 
+ a {
+  text-decoration: none;
+  color: white;
+  align-text: middle;
+ } 
+ 
+ #down {
+  margin-top: 100%;
+  padding-bottom: 25%;
+ } 
 
+div.topleft
+{
+    position:fixed;
+    top:20px;
+}
+div.topright
+{
+    position:fixed;
+    top:20px;
+}
+p{
+  align-text: center;
+  color: white;
+}
+
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+body {  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)) , url(/images/background.png);
+
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+#maincontainer
+{ top:0px;
+padding-top:0;
+margin:auto; position:relative;
+width:1920;
+height:250%;
+}
