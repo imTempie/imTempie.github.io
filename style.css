@@ -1,47 +1,99 @@
 html {
   scroll-behavior: smooth;
- }
- 
- a {
+}
+
+a {
   text-decoration: none;
   color: white;
   align-text: middle;
- } 
- 
- #down {
-  margin-top: 100%;
-  padding-bottom: 25%;
- } 
+}
 
-div.topleft
-{
-    position:fixed;
-    top:20px;
-}
-div.topright
-{
-    position:fixed;
-    top:20px;
-}
-p{
-  align-text: center;
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/images/background.png);
+  text-shadow: 2px 2px #000000;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
   color: white;
-}
-
-body,h1 {font-family: "Raleway", sans-serif}
-body, html {height: 100%}
-body {  background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)) , url(/images/background.png);
-
-  min-height: 100%;
+  text-align: center;
+  height: 100%;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
-#maincontainer
-{ top:0px;
-padding-top:0;
-margin:auto; position:relative;
-width:1920;
-height:250%;
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.menu {
+  padding: 10px;
+  min-height: 20px;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+.main {
+  padding: 10px;
+  flex: 1;
+  overflow: scroll;
+  padding-top: 90px;
+}
+.burgerMenu {
+  font-size: 2em;
+  background-color: #1f1f1f;
+  top: -100px;
+  transition: all;
+  transition-duration: 0.25s;
+  position: absolute;
+  width: 100%;
+}
+.burgerMenu.open {
+  top: 100px;
+}
+.burgerMenu a,
+.burgerMenu a:visited,
+.burgerMenu a:active {
+  color: white;
+  text-decoration: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: block;
+}
+.burgerMenu a:hover {
+  color: white;
+  background-color: #2a2a2a;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+  .w3-jumbo,
+  h1 {
+    font-size: 1.2em !important;
+  }
+  .w3-large,
+  p {
+    font-size: 1em !important;
+  }
+  .burgerMenu {
+    font-size: 1.2em;
+  }
+  .main {
+    padding-top: 66px;
+  }
+
+  .burgerMenu.open {
+    top: 68px;
+  }
 }
