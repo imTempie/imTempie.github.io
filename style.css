@@ -9,6 +9,7 @@ a {
 }
 
 body {
+  overflow: hidden;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(/images/background.png);
   text-shadow: 2px 2px #000000;
@@ -31,11 +32,11 @@ body {
 .menu {
   padding: 10px;
   min-height: 20px;
-  background-color: black;
+  background-color: #0e0e0e;
   color: white;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   z-index: 2;
 }
