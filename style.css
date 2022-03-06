@@ -8,6 +8,10 @@ a {
   align-text: middle;
 }
 
+p {
+  margin-top: 10px;
+}
+
 ::-webkit-scrollbar {
   visibility: hidden;
   width: 0px;
