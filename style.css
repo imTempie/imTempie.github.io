@@ -8,8 +8,12 @@ a {
   align-text: middle;
 }
 
+::-webkit-scrollbar {
+  visibility: hidden;
+  width: 0px;
+}
+
 body {
-  overflow: hidden;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(/images/background.png);
   text-shadow: 2px 2px #000000;
@@ -23,6 +27,7 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-color: black;
 }
 .wrapper {
   display: flex;
@@ -39,12 +44,14 @@ body {
   justify-content: space-around;
   align-items: center;
   z-index: 2;
+  padding-top: 25;
 }
 .main {
   padding: 10px;
   flex: 1;
   overflow: scroll;
   padding-top: 90px;
+  
 }
 .burgerMenu {
   font-size: 2em;
@@ -54,9 +61,10 @@ body {
   transition-duration: 0.25s;
   position: absolute;
   width: 100%;
+  z-index: 1;
 }
 .burgerMenu.open {
-  top: 100px;
+  top: 91px;
 }
 .burgerMenu a,
 .burgerMenu a:visited,
@@ -96,5 +104,17 @@ footer {
 
   .burgerMenu.open {
     top: 68px;
+  }
+}
+
+.animate-opacity{
+  animation:opac 0.8s
+}
+@keyframes opac{
+  from {
+    opacity:0
+  } 
+  to {
+    opacity:1
   }
 }
