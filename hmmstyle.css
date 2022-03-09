@@ -1,0 +1,142 @@
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  align-text: middle;
+}
+
+p {
+  margin-top: 10px;
+}
+
+::-webkit-scrollbar {
+  visibility: hidden;
+  width: 0px;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(/images/edwards.png);
+  text-shadow: 2px 2px #000000;
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-align: center;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.menu {
+  padding: 10px;
+  min-height: 20px;
+  background-color: #0e0e0e;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 2;
+  padding-top: 25;
+}
+
+.main {
+  padding: 10px;
+  flex: 1;
+  overflow: scroll;
+  padding-top: 90px;
+  
+}
+
+.burgerMenu {
+  font-size: 2em;
+  background-color: #1f1f1f;
+  top: -100px;
+  transition: all;
+  transition-duration: 0.25s;
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+
+.burgerMenu.open {
+  top: 91px;
+}
+
+.burgerMenu a,
+
+.burgerMenu a:visited,
+
+.burgerMenu a:active {
+  color: white;
+  text-decoration: none;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.burgerMenu a:hover {
+  color: white;
+  background-color: #2a2a2a;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: end;
+}
+
+@media screen and (max-width: 600px) {
+  .w3-jumbo,
+  
+  h1 {
+    font-size: 1.2em !important;
+  }
+  
+  .w3-large,
+  
+  p {
+    font-size: 1em !important;
+  }
+  
+  .burgerMenu {
+    font-size: 1.2em;
+  }
+  
+  .main {
+    padding-top: 66px;
+  }
+
+  .burgerMenu.open {
+    top: 68px;
+  }
+  
+}
+
+.animate-opacity {
+  animation:opac 0.8s
+}
+
+@keyframes opac {
+  from {
+    opacity:0
+  } 
+  
+  to {
+    opacity:1
+  }
+}
