@@ -17,13 +17,13 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link rel="preload" href="/images/background.png" as="image" />
+    <link rel="preload" href="/images/bg.gif" as="image" />
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Raleway"
     />
-    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
 
     <script
       src="https://kit.fontawesome.com/df9d0c3b81.js"
@@ -39,12 +39,13 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
-    <script type="text/javascript" src="toggleMenu.js"></script>
+    <script type="text/javascript" src="/js/toggleMenu.js"></script>
+    <script type="text/javascript" src="/js/increaseCount.js"></script>
 
   </head>
 
-  <body class="animate-opacity">
-    <div class="wrapper animate-opacity">
+  <body >
+    <div class="wrapper">
       <div class="menu">
         <a href="https://tempie.tempiexd.repl.co/index.html">
           <h1>&lt;Tempie/&gt;</h1>
@@ -55,43 +56,33 @@
       </div>
       <div class="burgerMenu">
         <div>
-          <a href="https://Tempie.tempiexd.repl.co/index.html">Home</a>
+          <a href="/index.html">Home</a>
         </div>
         <div>
-          <a href="https://Tempie.tempiexd.repl.co/portfolio.html">Portfolio</a>
+          <a href="/pages/portfolio.html">Portfolio</a>
         </div>
         <div>
-          <a href="https://Tempie.tempiexd.repl.co/hmm.html">Hmmmmm...</a>
+          <a href="/pages/hmm.html">Hmmmmm...</a>
         </div>
         <div>
-          <a href="https://Tempie.tempiexd.repl.co/button.html">JS Button</a>
+          <a href="/pages/button.html">JS Button</a>
         </div>
       </div>
       <div class="main animate-opacity">
         <div>
-          <h1>Portfolio</h1>
+          <h1>Button JS</h1>
           <hr style="margin: auto; width: 40%" />
           <p>
             <i class="fa-solid fa-cog fa-spin"></i>
-            Work In Progress
+            Button with Javascript that increases every click
             <i class="fa-solid fa-cog fa-spin fa-spin-reverse"></i>
           </p>
         </div>
-        <div style="margin-bottom: 100">
-          <h1 style="margin-top: 150px">???</h1>
-
-          <p>Well, this is page 1</p>
-          <p>This was just a test page\</p>
-          <p>
-            There isn't much here yet but maybe there will be?
-          </p>
-          <p>
-            I'm not sure..
-          </p>
-
-          <h1 style="margin-top: 100px">Links</h1>
-
-          <p>
+        <div>
+          <button class="button" onclick="increaseCount()">Click Me: <span id="count">0</span></button>
+        </div>
+        <h1 style="margin-top: 200px">Links</h1>
+        <p>
             Click
             <a href="https://github.com/imTempie" target="_blank">
               here for my GitHub <i class="fa-brands fa-github"></i>
@@ -124,15 +115,12 @@
               here for my Twitch <i class="fa-brands fa-twitch"></i>
             </a>
           </p>
-        </div>
       </div>
-      <footer>
-        <p>Author: tempie#1111</p>
-        <p>
-          <a href="mailto:tempieeft@gmail">tempieeft@gmail.com</a>
-        </p>
-      </footer>
-    </div>
-
+          <footer>
+            <p>Author: tempie#1111</p>
+            <p>
+              <a href="mailto:tempieeft@gmail">tempieeft@gmail.com</a>
+            </p>
+          </footer>
   </body>
 </html>
