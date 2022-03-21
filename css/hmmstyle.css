@@ -144,3 +144,11 @@ footer {
     opacity: 1;
   }
 }
+
+.fa-bars:hover {
+  color: #c2c2c2;
+}
+
+.tempie:hover {
+  color: #c2c2c2;
+}
