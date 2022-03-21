@@ -40,15 +40,13 @@
       crossorigin="anonymous"
     ></script>
     <script type="text/javascript" src="/js/toggleMenu.js"></script>
-    <script type="text/javascript" src="/js/increaseCount.js"></script>
-
   </head>
 
-  <body >
+  <body>
     <div class="wrapper">
       <div class="menu">
         <a href="https://tempie.tempiexd.repl.co/index.html">
-          <h1>&lt;Tempie/&gt;</h1>
+          <h1 class="tempie">&lt;Tempie/&gt;</h1>
         </a>
         <h1 onclick="toggleMenu()" style="cursor: pointer">
           <i class="fa-light fa-bars"></i>
@@ -56,33 +54,48 @@
       </div>
       <div class="burgerMenu">
         <div>
-          <a href="/index.html">Home</a>
+          <a href="/index.html">Home <i class="fa-solid fa-house-user"></i></a>
         </div>
         <div>
-          <a href="/pages/portfolio.html">Portfolio</a>
+          <a href="/pages/portfolio.html"
+            >Portfolio <i class="fa-solid fa-briefcase"></i
+          ></a>
         </div>
         <div>
-          <a href="/pages/hmm.html">Hmmmmm...</a>
+          <a href="/pages/hmm.html"
+            >Hmmmmm... <i class="fa-solid fa-question"></i
+          ></a>
         </div>
         <div>
-          <a href="/pages/button.html">JS Button</a>
+          <a href="/pages/button.html"
+            >JS Button <i class="fa-regular fa-crosshairs"></i
+          ></a>
         </div>
       </div>
       <div class="main animate-opacity">
         <div>
-          <h1>Button JS</h1>
+          <h1>Portfolio <i class="fa-solid fa-briefcase"></i></h1>
           <hr style="margin: auto; width: 40%" />
           <p>
             <i class="fa-solid fa-cog fa-spin"></i>
-            Button with Javascript that increases every click
+            Work In Progress
             <i class="fa-solid fa-cog fa-spin fa-spin-reverse"></i>
           </p>
         </div>
-        <div>
-          <button class="button" onclick="increaseCount()">Click Me: <span id="count">0</span></button>
-        </div>
-        <h1 style="margin-top: 200px">Links</h1>
-        <p>
+        <div style="margin-bottom: 100">
+          <h1 style="margin-top: 150px">
+            GitHub <i class="fa-brands fa-github"></i>
+          </h1>
+          <a href="https://github.com/imTempie">
+            <p>Click here for my GitHub page</p>
+          </a>
+          <p>
+            There are some projects on there you might not find on this website
+          </p>
+
+          <h1 style="margin-top: 100px">Links</h1>
+
+          <p>
             Click
             <a href="https://github.com/imTempie" target="_blank">
               here for my GitHub <i class="fa-brands fa-github"></i>
@@ -115,12 +128,14 @@
               here for my Twitch <i class="fa-brands fa-twitch"></i>
             </a>
           </p>
+        </div>
       </div>
-          <footer>
-            <p>Author: tempie#1111</p>
-            <p>
-              <a href="mailto:tempieeft@gmail">tempieeft@gmail.com</a>
-            </p>
-          </footer>
+      <footer>
+        <p>Author: tempie#1111</p>
+        <p>
+          <a href="mailto:tempieeft@gmail">tempieeft@gmail.com</a>
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
