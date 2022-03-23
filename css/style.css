@@ -129,6 +129,14 @@ footer {
   .burgerMenu.open {
     top: 66px;
   }
+
+  .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    width: 85%;
+  }
 }
 
 .animate-opacity {
@@ -176,4 +184,11 @@ footer {
 
 .tempie:hover {
   color: #c2c2c2;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
 }
