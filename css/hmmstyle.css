@@ -18,8 +18,8 @@ p {
 }
 
 body {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url(/images/edwards.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(/images/bg.gif);
   text-shadow: 2px 2px #000000;
   font-family: "Raleway", sans-serif;
   margin: 0;
