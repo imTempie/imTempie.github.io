@@ -37,6 +37,10 @@
       crossorigin="anonymous"
     ></script>
     <script type="text/javascript" src="/js/toggleMenu.js"></script>
+    <script type="text/javascript" src="/js/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    
   </head>
 
   <body>
@@ -113,7 +117,18 @@
               >https://discord.gg/vWtUB2EYKb</a
             >
           </p>
+          <h1 style="margin-top: 150px">Random Number Visualiser</h1>
+          <hr style="margin: auto; width: 40%" />
+          <p>Made using the Chart.js library</p>
+          
+          <div class="center">
+            <button class="button button_primary" onclick="array();">Generate</button>
+          </div>
 
+          <div id="chartReport">
+            <canvas id="chart"></canvas>
+          </div>
+          
           <h1 style="margin-top: 100px">
             Links <i class="fa-solid fa-link-simple"></i>
           </h1>

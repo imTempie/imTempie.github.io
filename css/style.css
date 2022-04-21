@@ -192,3 +192,11 @@ footer {
   margin-right: auto;
   margin-top: 25px;
 }
+
+canvas {
+  margin: auto;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  width: 50%;
+  background-color: #dedede;
+}
