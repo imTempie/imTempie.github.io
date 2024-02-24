@@ -1,133 +1,144 @@
 <html>
-  <head>
-    <title>T E M P I E</title>
+    <head>
+        <title>T E M P I E</title>
 
-    <meta property="og:title" content="T E M P I E" />
-    <meta property="og:image" content="/images/potato.jpg" />
-    <meta property="og:description" content="Tempie's Website [Very Cool]" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta property="og:title" content="T E M P I E" />
+        <meta property="og:image" content="/images/potato.jpg" />
+        <meta
+            property="og:description"
+            content="Tempie's Website [Very Cool]"
+        />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
-    <link rel="preload" href="/images/bg.gif" as="image" />
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Raleway"
-    />
-    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+            crossorigin="anonymous"
+        />
+        <link rel="preload" href="/images/bg.gif" as="image" />
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Raleway"
+        />
+        <link href="/css/style.css" rel="stylesheet" type="text/css" />
 
-    <script
-      src="https://kit.fontawesome.com/df9d0c3b81.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-      crossorigin="anonymous"
-    ></script>
-    <script type="text/javascript" src="/js/toggleMenu.js"></script>
-    <script type="text/javascript" src="/js/increaseCount.js"></script>
-  </head>
+        <script
+            src="https://kit.fontawesome.com/df9d0c3b81.js"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+            integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+            crossorigin="anonymous"
+        ></script>
+        <script type="text/javascript" src="/js/toggleMenu.js"></script>
+        <script type="text/javascript" src="/js/increaseCount.js"></script>
+    </head>
 
-  <body>
-    <div class="wrapper">
-      <div class="menu">
-        <a href="/index.html">
-          <h1 class="tempie">&lt;Tempie/&gt;</h1>
-        </a>
-        <h1 onclick="toggleMenu()" style="cursor: pointer">
-          <i class="fa-light fa-bars"></i>
-        </h1>
-      </div>
-      <div class="burgerMenu">
-        <div>
-          <a href="/index.html">Home <i class="fa-solid fa-house-user"></i></a>
+    <body>
+        <div class="wrapper">
+            <div class="menu">
+                <a href="/index.html">
+                    <h1 class="tempie">&lt;Tempie/&gt;</h1>
+                </a>
+                <h1 onclick="toggleMenu()" style="cursor: pointer">
+                    <i class="fa-light fa-bars"></i>
+                </h1>
+            </div>
+            <div class="burgerMenu">
+                <div>
+                    <a href="/index.html"
+                        >Home <i class="fa-solid fa-house-user"></i
+                    ></a>
+                </div>
+                <div>
+                    <a href="/pages/portfolio.html"
+                        >Portfolio <i class="fa-solid fa-briefcase"></i
+                    ></a>
+                </div>
+                <div>
+                    <a href="/pages/hmm.html"
+                        >Hmmmmm... <i class="fa-solid fa-question"></i
+                    ></a>
+                </div>
+                <div>
+                    <a href="/pages/button.html"
+                        >JS Button <i class="fa-regular fa-crosshairs"></i
+                    ></a>
+                </div>
+            </div>
+            <div class="main animate-opacity">
+                <div>
+                    <h1>JS Button</h1>
+                    <hr style="margin: auto; width: 40%" />
+                    <p>
+                        <i class="fa-solid fa-cog fa-spin"></i>
+                        Button with Javascript that increases every click
+                        <i class="fa-solid fa-cog fa-spin fa-spin-reverse"></i>
+                    </p>
+                </div>
+                <div>
+                    <button class="button" onclick="increaseCount()">
+                        Click Me: <span id="count">0</span>
+                    </button>
+                </div>
+                <h1 style="margin-top: 200px">
+                    Links <i class="fa-solid fa-link-simple"></i>
+                </h1>
+                <div>
+                    Click
+                    <a href="https://github.com/imTempie" target="_blank">
+                        here for my GitHub <i class="fa-brands fa-github"></i>
+                    </a>
+                    <p>
+                        Click
+                        <a href="https://twitter.com/im_tempie" target="_blank">
+                            here for my Twitter
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </p>
+                    <p>
+                        Click
+                        <a
+                            href="https://steamcommunity.com/id/ImTempie/"
+                            target="_blank"
+                        >
+                            here for my Steam <i class="fa-brands fa-steam"></i>
+                        </a>
+                    </p>
+                    <p>
+                        Click
+                        <a
+                            href="https://www.youtube.com/channel/UCpFyTnhnb9-ukzNIFdPlfQg"
+                            target="_blank"
+                        >
+                            here for my Youtube
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </p>
+                    <p>
+                        Click
+                        <a
+                            href="https://www.twitch.tv/im_tempie"
+                            target="_blank"
+                        >
+                            here for my Twitch
+                            <i class="fa-brands fa-twitch"></i>
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <footer>
+                <p>Author: tempie#1111</p>
+            </footer>
         </div>
-        <div>
-          <a href="/pages/portfolio.html"
-            >Portfolio <i class="fa-solid fa-briefcase"></i
-          ></a>
-        </div>
-        <div>
-          <a href="/pages/hmm.html"
-            >Hmmmmm... <i class="fa-solid fa-question"></i
-          ></a>
-        </div>
-        <div>
-          <a href="/pages/button.html"
-            >JS Button <i class="fa-regular fa-crosshairs"></i
-          ></a>
-        </div>
-      </div>
-      <div class="main animate-opacity">
-        <div>
-          <h1>JS Button</h1>
-          <hr style="margin: auto; width: 40%" />
-          <p>
-            <i class="fa-solid fa-cog fa-spin"></i>
-            Button with Javascript that increases every click
-            <i class="fa-solid fa-cog fa-spin fa-spin-reverse"></i>
-          </p>
-        </div>
-        <div>
-          <button class="button" onclick="increaseCount()">
-            Click Me: <span id="count">0</span>
-          </button>
-        </div>
-        <h1 style="margin-top: 200px">
-          Links <i class="fa-solid fa-link-simple"></i>
-        </h1>
-        <div>
-          Click
-          <a href="https://github.com/imTempie" target="_blank">
-            here for my GitHub <i class="fa-brands fa-github"></i>
-          </a>
-          <p>
-            Click
-            <a href="https://twitter.com/im_tempie" target="_blank">
-              here for my Twitter <i class="fa-brands fa-twitter"></i>
-            </a>
-          </p>
-          <p>
-            Click
-            <a href="https://steamcommunity.com/id/ImTempie/" target="_blank">
-              here for my Steam <i class="fa-brands fa-steam"></i>
-            </a>
-          </p>
-          <p>
-            Click
-            <a
-              href="https://www.youtube.com/channel/UCpFyTnhnb9-ukzNIFdPlfQg"
-              target="_blank"
-            >
-              here for my Youtube <i class="fa-brands fa-youtube"></i>
-            </a>
-          </p>
-          <p>
-            Click
-            <a href="https://www.twitch.tv/im_tempie" target="_blank">
-              here for my Twitch <i class="fa-brands fa-twitch"></i>
-            </a>
-          </p>
-        </div>
-      </div>
-      <footer>
-        <p>Author: tempie#1111</p>
-        <p>
-          <a href="mailto:tempieeft@gmail">tempieeft@gmail.com</a>
-        </p>
-      </footer>
-    </div>
-  </body>
+    </body>
 </html>
